@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 b-top-line">
+					<div class="b-hms">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAANCAYAAAB/9ZQ7AAAAXklEQVQoU2OMtDb4z0AkYMSm2MEngOHAlg0YRmAohinEpgFFMboCdD5cMS6rkcXBinEphDkaJs84s70BHBowD4EkYABdDMNkbB6Em4zuDOorJhSJIPdjjUFcGklSDAAOlV/RvMJ+NgAAAABJRU5ErkJggg==" alt="home">
+						<!-- <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAANCAYAAAB/9ZQ7AAAAXklEQVQoU2OMtDb4z0AkYMSm2MEngOHAlg0YRmAohinEpgFFMboCdD5cMS6rkcXBinEphDkaJs84s70BHBowD4EkYABdDMNkbB6Em4zuDOorJhSJIPdjjUFcGklSDAAOlV/RvMJ+NgAAAABJRU5ErkJggg==" alt="home"></a> -->
+						<a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAYElEQVQoU2OMtDb4z0AiYCRL08z2BtJtgmk6sGUDQUc6+ASA1TCCNIE0gATwaYTJg2i4JpAJuDQii2NowqYR3SCsmpA1YrMZpyZCTkXxE8Hgg/obrIkYxchqyEsR5CQjAGOsTrHGt1AnAAAAAElFTkSuQmCC" alt="mail"></a>
+						<a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAYAAACQN/8FAAAAaUlEQVQoU2Oc2d7wnwEKDmzZAGNi0IwghSAFDj4BYElciuEKQYpAivEqRLYHp8JIawO4G5E1wJwCcw4jSCE2K2FiMA1whejWI2sGsfGaiKwZp0L0gCTKRFBIEHQjimewxRtWz+BSiCwOAKWdUh0ftxSHAAAAAElFTkSuQmCC" alt="sitemap"></a>
+					</div>
+					<div class="b-viv">
+						<a href="#">Версия для слабовидящих</a>
+					</div>
+					<div class="b-timedate">
+						<p><span class="b-time" id="timedisplay"></span><span class="b-date" id="datedisplay"></span></p>
+					</div>
+					<div class="b-leave-msg">
+						<a class='popup-with-move-anim' href="#small-dialog">Оставьте свое мнение</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="b-logo col-xs-4 col-sm-2">
+					<a href="#"><img src="/img/header-logo.png" alt=""></a>
+				</div>
+				<div class="b-title col-xs-8 col-sm-5">
+					<h1>Муниципальное казённое учреждение "Многофункциональный центр предоставления государственных и муниципальных услуг городского округа Электросталь Московской области"</h1>
+				</div>
+				<div class="b-gerb col-xs-2">
+					<img src="./img/header-gerb.png" alt="Герб">
+				</div>
+				<div class="b-header-contacts col-xs-12 col-sm-5 col-md-3">
+					<p class="b-phone">
+						<a href="">+7 496 570 33 63</a>
+					</p>
+					<p class="b-mail">
+						<a href="mailto:mfc-hvoinaya@mail.ru">mfc-elektrostalgo@mosreg.ru</a>
+					</p>
+					<a href="#" class="b-btn">Электронная приемная</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="menu-line">
+				<form class="searchbox">
+					<input type="search" placeholder="Найти..." name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+					<input type="submit" class="searchbox-submit" value="">
+					<span class="searchbox-icon"></span>
+				</form>
+				<ul class="menu-line__menu">
+					<li><a href="#">Для физических лиц</a></li><li><a href="##">Для юридических лиц</a></li><li><a href="">Жизненные ситуации</a></li><li><a href="">Для бизнеса</a></li><li><a href="">Электронные услуги</a></li>
+				</ul>
+				<div id="menu-toggle">
+					<div id="hamburger">
+						<span class="hamburger-span"></span>
+						<span class="hamburger-span"></span>
+						<span class="hamburger-span"></span>
+					</div>
+					<div id="cross">
+						<span class="hamburger-span"></span>
+						<span class="hamburger-span"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page">
+		<div class="container">
+			<div class="row">
+				<div class="left-side col-xs-12 col-sm-3 col-lg-2">
+					<nav>
+						<ul class="b-side-menu">
+							<li class="current-menu-item"><a href="#">О нас</a>
+							<ul class="sub-menu">
+								<li><a href="#">uno</a></li>
+								<li>dos</li>
+								<li>tres</li>
+								<li>cuatro</li>
+								<li>cinco</li>
+								<li>seis</li>
+							</ul>
+							</li>
+							<li>Документы
+							<ul class="sub-menu">
+								<li>uno</li>
+								<li>dos</li>
+								<li>tres</li>
+								<li>cuatro</li>
+								<li>cinco</li>
+								<li>seis</li>
+							</ul>
+							</li>
+							<li>Контакты
+							</li>
+							<li>МФЦ для бизнеса
+							<ul class="sub-menu">
+								<li>uno</li>
+								<li>dos</li>
+								<li>tres</li>
+								<li>cuatro</li>
+								<li>cinco</li>
+								<li>seis</li>
+							</ul>
+							</li>
+						</ul>
+					</nav>
+					<a href="#"><img src="./img/facebook.jpg" alt=""></a>
+					<a href="#"><img src="./img/malinovka-.png" alt=""></a>
+				</div>
+				<div id="pjax-container" class="b-main-content col-xs-12 col-sm-9 col-md-6 col-lg-8">
+					 <div class="owl-carousel main-carousel">
+						<div class="main-carousel__item">
+							<img src="./img/main-carousel.jpg" alt="" class="slider">
+							<div class="main-carousel__item__content">
+								<a href="#"><h2>Документы для важных моментов</h2></a>
+							</div>	
+						</div>
+						<div class="main-carousel__item">
+							<img src="./img/main-carousel.jpg" alt="" class="slider">
+							<div class="main-carousel__item__content">
+								<a href="#"><h2>Документы для важных моментовДокументы для важных моментовДокументы для важных моментовДокументы для важных моментов</h2></a>
+							</div>	
+						</div>
+						<div class="main-carousel__item">
+							<img src="./img/main-carousel.jpg" alt="" class="slider">
+							<div class="main-carousel__item__content">
+								<a href="#"><h2>Документы для важных моментов</h2></a>
+							</div>	
+						</div>
+					</div> 
+					<div class="b-news-list">
+						<h2 class="b-news-list__h2"><a href="#">Новости</a></h2>
+						<article class="b-news-article">
+							<a href="#"><img src="./img/news1.jpg" alt=""></a>
+							<h3><a href="#">Дни открытых дверей в офисах ГОАУ "МФЦ" 25-26 мая</a></h3>
+							<p>Уважаемые заявители! 25-26 в структурных подразделениях ГОАУ «МФЦ» пройдут Дни открытых дверей.</p>
+							<time>26 мая 2017</time>
+						</article>
+						<article class="b-news-article">
+							<a href="#"><img src="./img/news1.jpg" alt=""></a>
+							<h3><a href="#">Дни открытых дверей в офисах ГОАУ "МФЦ" 25-26 мая</a></h3>
+							<p>Уважаемые заявители! 25-26 в структурных подразделениях ГОАУ «МФЦ» пройдут Дни открытых дверей.</p>
+							<time>26 мая 2017</time>
+						</article>
+						<article class="b-news-article">
+							<a href="#"><img src="./img/news1.jpg" alt=""></a>
+							<h3><a href="#">Дни открытых дверей в офисах ГОАУ "МФЦ" 25-26 мая</a></h3>
+							<p>Уважаемые заявители! 25-26 в структурных подразделениях ГОАУ «МФЦ» пройдут Дни открытых дверей.</p>
+							<time>26 мая 2017</time>
+						</article>
+					</div>
+					<a href="#" class="b-btn b-btn__news">Все новости</a>
+				</div>
+				<div class="b-right-side col-md-3 col-lg-2">
+					<a href="#"><img src="./img/goryachaya-liniya.jpg" alt="" class="b-right-side__img"></a>
+					<a href="#"><img src="./img/goryachaya-liniya.jpg" alt="" class="b-right-side__img"></a>
+					<a href="#"><img src="./img/goryachaya-liniya.jpg" alt="" class="b-right-side__img"></a>
+					<img src="./img/goryachaya-liniya.jpg" alt="" class="b-right-side__img">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="b-map col-xs-12">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abb96c96d32224dbf54a6d136a1a261551fe8c8d1904d902df8c4a68df4059ccb&amp;width=100%25&amp;height=480&amp;lang=ru_RU&amp;scroll=true"></script>
+					<div class="map-contacts">
+						<div class="map-contacts__logo-wrap">
+							<img src="/img/header-logo.png" alt="" class="map-contacts__logo">
+						</div>
+						<p class="map-contacts__p"><strong>Государственное областное автономное учреждение «Многофункциональный центр предоставления государственных и муниципальных услуг»</strong><br>
+							<br>
+							<strong>Адрес:</strong><br>
+							г. Электросталь +7 49657 0‑33-63
+						</p>
+						<div class="map-contacts__tiangle"></div>
+						<div class="map-contacts__close-btn"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<p>© 2016-2017г. Все права защищены</p>
+					<nav class="navigation pagination" role="navigation">
+		<div class="nav-links"><a class="prev page-numbers" href="http://mfc.dev/category/mfc-dlja-biznesa/page/2/">Назад</a>
+<a class="page-numbers" href="http://mfc.dev/category/mfc-dlja-biznesa/">1</a>
+<a class="page-numbers" href="http://mfc.dev/category/mfc-dlja-biznesa/page/2/">2</a>
+<span class="page-numbers current">3</span>
+<a class="page-numbers" href="http://mfc.dev/category/mfc-dlja-biznesa/page/4/">4</a>
+<a class="next page-numbers" href="http://mfc.dev/category/mfc-dlja-biznesa/page/4/">Далее</a></div>
+	</nav>
+			</div>
+		</div>
+	</div>
+	<!-- Форма обратной связи -->
+	<form class="zoom-anim-dialog mfp-hide calback-form" id="small-dialog">
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Site Name">
+		<input type="hidden" name="admin_email" value="avisloguzov@gmail.com">
+		<input type="hidden" name="form_subject" value="Form Subject">
+		<!-- END Hidden Required Fields -->
+		<fieldset>
+			<legend>Оставить свое мнение:</legend>
+			Ваше имя:<br>
+			<input type="text" name="firstname"><br>
+			Ваша фамилия:<br>
+			<input type="text" name="lastname"><br>
+			Ваш телефон:<br>
+			<input type="text" name="lastname"><br>
+			Ваше мнение:<br>
+			<textarea name="opinion"></textarea>
+			<input class="b-btn b-btn__news" type="submit" value="Отправить">
+		</fieldset>
+		<div class="confirm">
+			Сообщение успешно отправлено
+		</div>
+	</form>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
